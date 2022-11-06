@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>go-filecache example</title>
+<link rel="icon" href="/favicon.ico">
+</head>
+<body>
+<h1>go-filecache example</h1>
+<p>This is an example image server. <a href="/image.png">/image.png</a> generates and caches images.</p>
+
+<h2>Examples:</h2><ul>
+<li><a href="/image.png">/image.png</a> (default parameters)</li>
+<li><a href="/image.png?color=cc0000">/image.png?color=cc0000</a> (change the color)</li>
+<li><a href="/image.png?width=800&amp;height=600&amp;color=0000cc&amp;twist=-30">/image.png?width=800&amp;height=600&amp;color=0000cc&amp;twist=-30</a> (more parameters)</li>
+<li><a href="/image.png?color=6666cc&amp;twist=720">/image.png?color=6666cc&amp;twist=720</a></li>
+<li><a href="/image.png?color=ff0000&amp;twist=-720&amp;stripe=16">/image.png?color=ff0000&amp;twist=-720&amp;stripe=16</a></li>
+<li><a href="/image.png?color=ffff00&amp;twist=0&amp;stripe=64">/image.png?color=ffff00&amp;twist=0&amp;stripe=64</a></li>
+<li><a href="/image.png?color=990099&amp;twist=480&amp;stripe=48&amp;circle-width=1">/image.png?color=990099&amp;twist=480&amp;stripe=48&amp;circle-width=1</a></li>
+<li><a href="/image.png?color=ff6600&amp;twist=-60&amp;stripe=3&amp;circle-width=5">/image.png?color=ff6600&amp;twist=-60&amp;stripe=3&amp;circle-width=5</a></li>
+<li><a href="/image.png?color=ff6699&amp;twist=30&amp;stripe=48&amp;circle-width=1">/image.png?color=ff6699&amp;twist=30&amp;stripe=48&amp;circle-width=1</a></li>
+</ul>
+
+<h2>Parameters:</h2><dl>
+<dt><code>width</code></dt><dd>Image width in pixel. [16..]</dd>
+<dt><code>height</code></dt><dd>Image height in pixel. [16..]</dd>
+<dt><code>color</code></dt><dd>Key color in RRGGBB hex format.</dd>
+<dt><code>twist</code></dt><dd>Amount to twist in degrees, can be negative.</dd>
+<dt><code>circle-width</code></dt><dd>Line thickness of the concentric circles. [1..16]</dd>
+<dt><code>stripe</code></dt><dd>Number of radiation stripes. [1..90]</dd>
+</dl>
+
+<h2>Inline images:</h2>
+<img src="/image.png?width=640&amp;height=640&amp;color=cc0000&amp;twist=30" width="320" height="320">
+<img src="/image.png?width=640&amp;height=640&amp;color=cc0000&amp;twist=30&p=1" width="320" height="320">
+<img src="/image.png?width=640&amp;height=640&amp;color=cc0000&amp;twist=30&p=2" width="320" height="320">
+<br>
+<img src="/image.png?width=640&amp;height=640&amp;color=0000cc&amp;twist=60" width="320" height="320">
+<img src="/image.png?width=640&amp;height=640&amp;color=0000cc&amp;twist=120" width="320" height="320">
+<img src="/image.png?width=640&amp;height=640&amp;color=0000cc&amp;twist=180" width="320" height="320">
+<br>
+<img src="/image.png?width=640&amp;height=640&amp;color=006600&amp;twist=0&amp;stripe=4" width="320" height="320">
+<img src="/image.png?width=640&amp;height=640&amp;color=006600&amp;twist=0&amp;stripe=8" width="320" height="320">
+<img src="/image.png?width=640&amp;height=640&amp;color=006600&amp;twist=0&amp;stripe=16" width="320" height="320">
+
+</body>
+</html>
